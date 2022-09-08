@@ -8,7 +8,7 @@
 4. Navbar
 5. Hero section (hero-image)
 6. Testimonial Section
-7.
+7. Slideshow
 */
 
 /*1.Root settings*/
@@ -70,6 +70,7 @@ body, html {
     font-weight:bold;
     padding:13px 32px;
     text-decoration:none;
+    margin-top: 2vh;
 }
 
 /*Above validated 220908*/
@@ -311,23 +312,63 @@ body, html {
         grid-template-areas:
         "comment1"
         "comment2"
-        "comment3"
         "comment4"
+        "comment3"
     }
 
-    #comment1 {
+    #comment1, #comment2, #comment3, #comment4 {
         height: 70vh;
+        padding: 20px;
     }
 
-    #comment2 {
-        height: 70vh;
-    }
+}
 
-    #comment3 {
-        height: 70vh;
-    }
+/*7. Slideshow*/
+.slideshow-container {
+    width: 80%;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+    background-color: var(--white);
+    height: 100vh;
+    border-radius: 10px;
+}
 
-    #comment4 {
-        height: 70vh;
+.slideshow-container img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+/*Hiding the slides, and then showing them by js code*/
+.myslides {
+    display: ;
+}
+
+.myslides-header {
+    font-size: 2rem;
+}
+
+.myslides-header, .myslides-text {
+    text-align: center;
+}
+
+/*Fading animation*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
     }
 }
