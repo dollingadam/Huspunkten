@@ -242,6 +242,10 @@ body, html {
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     row-gap: 10vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    height: 100vh;
 
     /*Grid area*/
     grid-template-areas:
@@ -268,6 +272,11 @@ body, html {
     align-items: center;
     padding-top: 20px;
     color: var(--white);
+
+}
+
+#comment2 h2 {
+    margin-top: 10vh;
 }
 
 #comment3 {
@@ -280,11 +289,45 @@ body, html {
     color: var(--white);
 }
 
+#comment3 h2 {
+    margin-top: 10vh;
+}
+
 #comment4 {
     grid-area: comment4;
     border-radius: 8px;
-    background-image: url(/img/family.jpg);
+    background-image: url(/img/office-820390_1920.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*Making grid responsive*/
+@media screen and (max-width: 550px) {
+    .testimonial-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        row-gap: 5vh;
+        grid-template-areas:
+        "comment1"
+        "comment2"
+        "comment3"
+        "comment4"
+    }
+
+    #comment1 {
+        height: 70vh;
+    }
+
+    #comment2 {
+        height: 70vh;
+    }
+
+    #comment3 {
+        height: 70vh;
+    }
+
+    #comment4 {
+        height: 70vh;
+    }
 }
