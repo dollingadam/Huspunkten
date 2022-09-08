@@ -75,3 +75,69 @@ body, html {
 /*Above validated 220908*/
 
 /*4. Navbar*/
+/*Navbar with flex method*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    margin: auto;
+    background-color: var(--four);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+/*Logo/title settings*/
+.brand-title {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+.navbar-links {
+    height: 100%;
+    background-color: var(--four);
+}
+
+/*Adjusting the link settings*/
+
+.navbar-links ul {
+    display: flex;
+    padding: 0;
+    margin-top: 3vh;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5rem;
+    margin: 2vw;
+
+}
+
+.navbar-links li:hover{
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/*Only visible in responsive mode, handled by js*/
+.toggle-button {
+    /*The hamburgerbag*/
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+
+}
