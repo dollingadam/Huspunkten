@@ -184,9 +184,13 @@ body, html {
 
     .navbar-links.active {
         display: flex;
+        background-color: var(--four);
+        height: 20vh;
     }
 
     .brand-title {
         margin-top: 2vw;
     }
 }
+
+/*Above validated 220908*/
