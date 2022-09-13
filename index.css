@@ -132,12 +132,12 @@ body, html {
 
 /*Only visible in responsive mode, handled by js*/
 .toggle-button {
-    /*The hamburgerbar*/
+    /*The hamburgerbar, mobile menu*/
     position: absolute;
     top: .75rem;
     right: 1rem;
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     width: 30px;
     height: 21px;
@@ -145,8 +145,8 @@ body, html {
 }
 
 /*Creating the bar style*/
-.toggle-button .bar {
-    height: 3px;
+.togglebutton .bar {
+    height: 20px;
     width: 100%;
     background-color: var(--white);
     border-radius: 10%;
